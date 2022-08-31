@@ -1,5 +1,6 @@
 ##  Assignments Folder
 
 |   #   | Assignment Description |
-
+| :---: | ---------------------- |
+|       |                        |
 
