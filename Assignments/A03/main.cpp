@@ -37,33 +37,87 @@
 
 using namespace std;
 
-
+/**
+ * CircularArrayQue
+ * 
+ * Description:
+ *      Description of a queue where last element connecting
+ *      to the first element of queue forming a circle
+ * 
+ * Public Methods:
+ *      void        Push() 
+ *      int         Pop()
+ *      
+ * 
+ * Private Methods:
+ *      void        init(int size) 
+ *      bool        Full()
+ *      
+ */
 class CircularArrayQue {
 private:
-    int *Container;
-    int Front;
-    int Rear;
-    int QueSize; // items in the queue
-    int CurrentSize;
+    int *Container;         //container for CircularArrayQue class
+    int Front;              //front of queue
+    int Rear;               //rear of queue
+    int QueSize;            //items in the queue
+    int CurrentSize;        //size of queue
+
+    /**
+     * Private : init()
+     * 
+     * Description:
+     *      to initialize size of queue
+     * 
+     * Params:
+     *      int     :       size 
+     */
     void init(int size = 0) {
         Front = Rear = CurrentSize = 0;
         QueSize = size;
     }
 
+    /**
+     * Private : Full()
+     * 
+     * Description:
+     *      to see if the queue is full
+     * 
+     * Returns:
+     *      bool: True if number of item in queue = size of queue
+     */
     bool Full() {
         return CurrentSize == QueSize;
     }
 
 public:
+    /**
+    * Default constructor sets size of container to 10
+    */
     CircularArrayQue() {
         Container = new int[10];
         init(10);
     }
+
+    /**
+    * Overload constructor sets size of container to 'size'
+    */
     CircularArrayQue(int size) {
         Container = new int[size];
         init(size);
     }
 
+    /**
+     * Public : Push()
+     * 
+     * Description:
+     *      add item to front of queue
+     * 
+     * Params:
+     *      int item    :   item to be added
+     * 
+     * Returns:
+     *      none
+     */
     void Push(int item) {
         if (!Full()) {
             Container[Rear] = item;
@@ -74,17 +128,40 @@ public:
         }
     }
 
+    /**
+     * Private : Pop()
+     * 
+     * Description:
+     *      to remove item from queue
+     * 
+     * Params:
+     *      none
+     * 
+     * Returns:
+     *      int: item removed from front of queue
+     */
     int Pop() {
         int temp = Container[Front];
         Front = (Front + 1) % QueSize;
         CurrentSize--;
         return temp;
     }
+
+    // make friends with ostream so it can access private members of this class when printing
     friend ostream &operator<<(ostream &os, const CircularArrayQue &other);
 };
 
-ostream &operator<<(ostream &os, const CircularArrayQue &other) {
 
+/**
+ * Overload ostream to print a vector to std out.
+ * @params:
+ *      ostream : copy of ostream (cout) so we can print to stdout
+ *      other : the vector to be printed
+ * @returns:
+ *      ostream& : the copy of ostream (cout) we printed to
+ */
+ostream &operator<<(ostream &os, const CircularArrayQue &other) {
+    //loop through the container
     for (int i = other.Front; i < other.CurrentSize; i = (i + 1) % other.QueSize) {
         os << other.Container[i] << " ";
     }
@@ -99,7 +176,8 @@ ostream &operator<<(ostream &os, const CircularArrayQue &other) {
  * 
  */
 int main() {
-    CircularArrayQue C1(5);
+    //set size of array to 5
+    CircularArrayQue C1(5); 
 
     // C1.Push(34);
     // C1.Push(38);
