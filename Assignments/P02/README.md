@@ -18,7 +18,7 @@ Continue with the Vector class from the previous exercise. This time, we will im
 
 |   #   | File       | Description                                                            |
 | :---: | ---------- | ---------------------------------------------------------------------- |
-|   1   | Vector.cpp | The main file that contains all functions prototype and implementation |
+|   1   | main.cpp | The main file that contains all functions prototype and implementation |
 |   2   | output.txt   | File contain the output of the program                                 |
 
 ### Instructions
@@ -34,5 +34,5 @@ g++ <source file name> -o <build file name>
 ```
 
 - Example Command:
-  - ```g++ Vector.cpp -o Vector```
+  - ```g++ main.cpp -o Vector```
   - ```./Vector```
