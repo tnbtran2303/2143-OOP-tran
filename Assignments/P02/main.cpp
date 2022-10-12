@@ -340,14 +340,6 @@ class Vector {
 
     // Overload = operator
     Vector operator=(const Vector &vector) {
-        // Some people may think of the below implementation:
-        // this->head = vector.head
-        // this->tail = vector.tail
-        // this->length = vector.length
-        // But this is totally wrong, because the above implementation will only copy the address of the head, tail and length
-        // Therefore, when the Destructor is called, the head and tail pointer will be deallocated twice
-
-        // Instead, we must clear the current vector and then copy the values of the input vector to the current vector
         clear();
         Node *curr = vector.head;
         while (curr != NULL) {
