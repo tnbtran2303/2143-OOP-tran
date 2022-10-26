@@ -7,41 +7,43 @@
 ## Definitions
 
 #### Abstraction
+> Data Abstraction is a process of providing only the essential details to the outside world and hiding the internal details, i.e., representing only the essential details in the program.
+> <img src="https://journaldev.nyc3.digitaloceanspaces.com/2019/09/data-abstraction.png">
 
 #### Attributes / Properties
 
-####Class
+#### Class
 
-####Class Variable
+#### Class Variable
 
-####Composition
+#### Composition
 
-####Constructor
+#### Constructor
 
-####Encapsulation
+#### Encapsulation
 
-####Friends
+#### Friends
 
-####Inheritance
+#### Inheritance
 
-####Instance Variable
+#### Instance Variable
 
-####Member Variable
+#### Member Variable
 
-####Method
+#### Method
 
-####Multiple Inheritance
+#### Multiple Inheritance
 
-####Object
+#### Object
 
-####Overloading
+#### Overloading
 
-####Polymorphism
+#### Polymorphism
 
-####Public / Private / Protected
+#### Public / Private / Protected
 
-####Static
+#### Static
 
-####Virtual
+#### Virtual
 
 
