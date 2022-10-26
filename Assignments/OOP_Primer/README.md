@@ -6,9 +6,9 @@
 
 ## Definitions
 
-####Abstraction
+#### Abstraction
 
-####Attributes / Properties
+#### Attributes / Properties
 
 ####Class
 
