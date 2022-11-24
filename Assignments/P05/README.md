@@ -4,13 +4,13 @@
 
 ### Files
 
-|   #   | File            | Description                                        |\par
-| :---: | --------------- | -------------------------------------------------- |
-|   1   | main.cpp        | Main driver of my project that launches game.      |
-|   2   | helpers.hpp     | Header part that handle vector and choose random item  |
+|   #   | File            | Description                                           |
+| :---: | --------------- | --------------------------------------------------    |
+|   1   | main.cpp        | Main driver of my project that launches game.         |
+|   2   | helpers.hpp     | Header part that handle vector and choose random item |
 |   3   | dice.hpp        | Header part that contains Die and Dice class          |
-|   4   | fighter.py      | Header part that contains BaseFighter class               |
-|   5   | weapon.hpp      | Header part that contains Weapon class               |
+|   4   | fighter.py      | Header part that contains BaseFighter class           |
+|   5   | weapon.hpp      | Header part that contains Weapon class                |
 
 ### Instructions
 
