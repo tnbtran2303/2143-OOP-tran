@@ -1,47 +1,42 @@
-### P03B - BolNiverse Fight Club\par
-### Ngoc Bao Tran Tran\par
-### Description:\par
-\par
-This code implement the BolNiverse Fight Club using oop(object oriented programming). There are 4 .hpp files for header parts and main.cpp is main drivr of this project that launches game. The dice is used for getting the attacking and defending force randomly. In main.cpp, to get the attackers's names I used input.dat.txt file that contains attackers names (about 1700 attackers) and output the result of each round and total result.\par
-\par
-### Files\par
-\par
+### P03B - BolNiverse Fight Club
+### Ngoc Bao Tran Tran
+### Description:
+
+### Files
+
 |   #   | File            | Description                                        |\par
-| :---: | --------------- | -------------------------------------------------- |\par
-|   1   | main.cpp        | Main driver of my project that launches game.      |\par
-|   2   | helpers.hpp     | Header part that handle vector and choose random item  |\par
-|   3   | dice.hpp        | Header part that contains Die and Dice class          |\par
-|   4   | fighter.py      | Header part that contains BaseFighter class               |\par
-|   5   | weapon.hpp      | Header part that contains Weapon class               |\par
-\par
-\par
-### Instructions\par
-\par
+| :---: | --------------- | -------------------------------------------------- |
+|   1   | main.cpp        | Main driver of my project that launches game.      |
+|   2   | helpers.hpp     | Header part that handle vector and choose random item  |
+|   3   | dice.hpp        | Header part that contains Die and Dice class          |
+|   4   | fighter.py      | Header part that contains BaseFighter class               |
+|   5   | weapon.hpp      | Header part that contains Weapon class               |
+
+### Instructions
+
 - Make sure you have g++ compiler installed on your machine\par
-- First of all, you have to compile the program by typing the following command with two parameters as follow in the terminal:\par
-```\par
-g++ <source file name> -o <build file name>\par
-```\par
-- After compiling, run the program by typing the name of the file you have built previously:\par
-```\par
-./<build file name>\par
-```\par
-- My program expects input file named `input.dat.txt` when you run the program.\par
-- The input file should be formatted with a fighters name on a seperate line:\par
-\par
-+------------+\par
-| warrior    |\par
-| wizard     |\par
-| elf        |\par
-| wizard     |\par
-| dragonborn |\par
-| etc...     |\par
-+------------+\par
-\par
-- Example Command:\par
-  - ```g++ main.cpp -o Vector```\par
-  - ```./Vector```\par
-\par
-\par
+- First of all, you have to compile the program by typing the following command with two parameters as follow in the terminal:
+```
+g++ <source file name> -o <build file name>
+```
+- After compiling, run the program by typing the name of the file you have built previously:
+```
+./<build file name>
+```
+- My program expects input file named `input.dat.txt` when you run the program.
+- The input file should be formatted with a fighters name on a seperate line:
+
++------------+
+| warrior    |
+| wizard     |
+| elf        |
+| wizard     |
+| dragonborn |
+| etc...     |
++------------+
+
+- Example Command:
+  - ```g++ main.cpp -o Vector```
+  - ```./Vector```
 }
-�
+
